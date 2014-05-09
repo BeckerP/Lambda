@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.landa"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="15"
+	      android:targetSdkVersion="17" />
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+
+    <!--
+     Creates a custom permission so only this app can receive its messages.
+
+     NOTE: the permission *must* be called PACKAGE.permission.C2D_MESSAGE,
+           where PACKAGE is the application's package name.
+    -->
+    <permission android:name="com.landa.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.landa.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+
+    <application
+	android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Lambda" >
+        
+        
+       
+        <activity
+            android:name=".cs4444.UserSelection"
+            android:label="LoginSelection" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+		<activity
+			android:name=".cs4444.UserSelectionTableSelect"
+			android:label="TableSelection" >
+		</activity>
+		<activity
+			android:name=".cook.CookActivity"
+			android:label="Cook Screen" >
+		</activity>
+		<activity
+			android:name=".waitStaff.WaitInfo"
+			android:label="Wait Staff Screen" >
+		</activity>
+		<activity
+		    android:name=".admin.Admin"
+		    android:label="Admin" >
+		</activity>
+		
+        <activity
+            android:name=".customer.Customer_Activity_Single_Pane"
+            android:label="Customer Selection" >
+        </activity>
+        <activity android:name=".customer.Customer_Activity_Multiple_Pane">
+        </activity>
+        <activity android:name=".customer.Game_Activity">
+        </activity>
+        <activity android:name=".customer.CustomerChat">
+        </activity>
+      	<activity android:name=".customer.ChatScreen">
+        </activity>
+        
+        <activity 
+            android:name=".waitStaff.Wait_Staff_Activity" 
+            android:label="waitstaff">
+			      
+        </activity>
+    	
+        
+        <activity android:name=".cs4444.LogIn"></activity>
+       
+       
+       
+       <!--
+          WakefulBroadcastReceiver that will receive intents from GCM
+          services and hand them to the custom IntentService.
+
+          The com.google.android.c2dm.permission.SEND permission is necessary
+          so only GCM services can send data messages for the app.
+        -->
+        <receiver
+            android:name="com.landa.backend.GcmBroadcastReciever"
+            
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.google.android.gcm.demo.app" />
+                <category android:name="com.landa" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".backend.GcmIntentService" />
+        
+    </application>
+
+</manifest>

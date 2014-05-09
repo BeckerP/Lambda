@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:orientation="horizontal"
+    android:padding="10dip"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    >
+ 
+    <TextView
+        android:id="@+id/paymentItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text=""
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+         />
+    
+    <TextView
+        android:id="@+id/paymentPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paymentItemName"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:text=""
+        android:textSize="18sp" />
+    
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+
+
+ 
+</RelativeLayout>

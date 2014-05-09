@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context =".Wait_Staff_Activity" >
+    
+     <FrameLayout
+        android:id="@+id/fragment_for_table_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="horizontal" />
+     <View style="@style/VerticalDivider"/>
+
+         <com.fima.cardsui.views.CardUI
+        android:id="@+id/fragment_for_table_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+         
+         
+  
+         
+</LinearLayout>

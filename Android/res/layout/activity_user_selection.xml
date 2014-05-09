@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".UserSelection"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/admin"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+       	android:textColor="@color/white"
+	    android:background="@color/DarkBlue"
+       	android:textSize="100sp"
+       	android:layout_weight="1"
+        android:text="@string/admin" />
+
+
+    <Button
+        android:id="@+id/server"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:textColor="@color/white"
+        android:background="@color/MediumBlue"
+        android:textSize="100sp"
+        android:layout_weight="1"
+        android:text="@string/server" />
+
+    <Button
+        android:id="@+id/cook"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+     	android:background="@color/blue"
+        android:text="@string/cook"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        android:textSize="100sp" />
+
+    <Button
+        android:id="@+id/customer"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:background="@color/RoyalBlue"
+        android:text="@string/customer"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        android:textSize="100sp" />
+
+</LinearLayout>

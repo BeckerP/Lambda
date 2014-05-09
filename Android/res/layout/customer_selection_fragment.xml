@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@drawable/main_header_selector"
+	android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginTop="25dp"
+   		android:layout_marginBottom="0dp"
+   		android:layout_marginLeft="25dp"
+		android:layout_marginRight="25dp"
+		>
+		
+    <Button
+	    android:id="@+id/Drink"
+	    android:text="@string/drinks"
+	    android:textColor="@color/white"
+	    android:background="@color/light_blue"
+	    android:textSize="128sp"
+	    android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+		/>
+    
+
+
+    <Button
+	    android:id="@+id/Menu"
+	    android:text="@string/menu"
+	    android:textColor="@color/white"
+	    android:background="@color/light_purple"
+	    android:textSize="128sp"
+	    android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+	    />
+
+	
+    <Button
+	    android:id="@+id/Help"
+	    android:text="@string/help"
+	    android:textColor="@color/white"
+	    android:background="@color/light_green"
+	    android:textSize="128sp"
+	    android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+	    />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginTop="0dp"
+   		android:layout_marginBottom="25dp"
+   		android:layout_marginLeft="25dp"
+		android:layout_marginRight="25dp" >
+
+    <Button
+	    android:id="@+id/Chat"
+	    android:text="@string/chat"
+	    android:textColor="@color/white"
+	    android:background="@color/dark_blue"
+	    android:textSize="128sp"
+	    android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+	    />
+    
+    <Button
+	    android:id="@+id/Game"
+	    android:text="@string/game"
+	    android:textColor="@color/white"
+	    android:background="@color/dark_purple"
+	    android:textSize="128sp"
+	    android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+	    />
+        
+    <Button
+	    android:id="@+id/Pay"
+	    android:text="@string/pay"
+	    android:textColor="@color/white"
+	    android:background="@color/dark_green"
+	    android:textSize="128sp"
+	    android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+	    />
+	</LinearLayout>
+</LinearLayout>

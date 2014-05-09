@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        >   
+        
+        
+    <ListView
+        android:id="@+id/orderList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:dividerHeight="1dp"
+        />
+    </LinearLayout>
+<View style="@style/Divider"/>
+<LinearLayout
+     	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+        
+        >
+<RelativeLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	 >
+        <TextView
+            android:id="@+id/subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/subtotal"
+            android:textSize="18sp" />
+        
+         <TextView
+            android:id="@+id/subtotalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/emptyCash"
+            android:textSize="18sp" />
+        
+
+        <TextView
+            android:id="@+id/tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subtotal"
+            android:text="@string/tax"
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/taxValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/subtotalValue"
+            android:text="@string/TAX"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tax"
+            android:text="@string/total"
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/totalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/taxValue"
+            android:layout_alignParentRight="true"
+            android:text="@string/emptyCash"
+            android:textSize="18sp" />
+        
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/totalValue"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:text="@string/submit" />
+	</RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_refill"
+        android:showAsAction="always"
+        android:title="@string/refill"/>
+    <item
+        android:id="@+id/action_help"
+        android:showAsAction="always"
+        android:title="@string/help">
+    </item>
+
+</menu> 
